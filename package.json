@@ -1,8 +1,0 @@
-{
-  "name": "registro-finance-ocr-module",
-  "version": "1.0.0",
-  "description": "Módulo OCR con Tesseract.js para extraer datos de comprobantes bancarios (Falabella, Yape, BCP, Scotiabank) en Next.js/React",
-  "dependencies": {
-    "tesseract.js": "^5.1.1"
-  }
-}
