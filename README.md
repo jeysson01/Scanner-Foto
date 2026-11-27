@@ -1,3 +1,10 @@
 # Scanner-Foto
 
-Extractor de comprobantes en el navegador. Sube una captura y extrae origen, monto, fecha, hora y número de operación.
+Extractor de comprobantes peruanos. Permite subir una captura, ejecutar OCR con Tesseract.js y revisar/editar antes de guardar en una tabla.
+
+## Desarrollo
+
+```bash
+npm install
+npm run dev
+```
