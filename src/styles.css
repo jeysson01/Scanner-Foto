@@ -6,6 +6,19 @@ h1, h2 { margin-bottom: 8px; }
 .subtitulo { color: #64748b; margin: 0 0 20px; }
 .panel { display: grid; grid-template-columns: minmax(220px, 340px) 1fr; gap: 18px; background: white; border-radius: 16px; padding: 18px; box-shadow: 0 8px 30px #1e293b14; }
 .carga, .formulario { display: flex; flex-direction: column; gap: 12px; }
+.carga { border: 1px dashed transparent; border-radius: 12px; padding: 8px; }
+.carga.arrastrando { border-color: #2563eb; background: #eff6ff; }
+.selector-archivos { display: flex; align-items: center; justify-content: center; min-height: 44px; border: 1px solid #cbd5e1; border-radius: 8px; padding: 10px; cursor: pointer; background: white; }
+.selector-archivos input { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+.ayuda-carga { color: #64748b; font-size: 13px; margin: 0; }
+.secundario { background: #eaf0f7; color: #172033; }
+.encabezado-revision, .navegacion-revision { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.etiqueta-revisar { display: inline-block; margin-left: 6px; border-radius: 999px; padding: 3px 8px; background: #fef3c7; color: #92400e; font-size: 12px; font-weight: 700; }
+.campo-revisar { border-color: #d97706; background: #fffbeb; }
+.aviso-lectura { margin: 0; border-radius: 8px; padding: 10px; background: #fffbeb; color: #92400e; font-size: 14px; }
+.error-lectura { margin: 0; color: #b91c1c; font-size: 13px; }
+.toast { margin: 16px 0; border-radius: 8px; padding: 12px 14px; background: #dcfce7; color: #166534; }
+.toast button { padding: 0; background: none; color: inherit; text-decoration: underline; }
 .vista { width: 100%; max-height: 280px; object-fit: contain; border-radius: 10px; background: #eef2f7; }
 label { display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 650; }
 input, select { width: 100%; border: 1px solid #cbd5e1; border-radius: 8px; padding: 10px; background: white; }
@@ -19,4 +32,4 @@ th, td { text-align: left; padding: 12px; border-bottom: 1px solid #e2e8f0; }
 th { background: #eaf0f7; }
 .borrar { background: #fee2e2; color: #991b1b; }
 .vacio { text-align: center; color: #64748b; padding: 28px; }
-@media (max-width: 760px) { .panel { grid-template-columns: 1fr; } .contenedor { padding: 20px 12px 40px; } }
+@media (max-width: 760px) { .panel { grid-template-columns: 1fr; } .contenedor { padding: 20px 12px 40px; } .navegacion-revision button { flex: 1; } }
